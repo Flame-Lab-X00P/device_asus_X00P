@@ -424,9 +424,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+
 # Zenparts    
 PRODUCT_PACKAGES += \
     ZenParts 
+
+# Reduce system image size by limiting java debug info.
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
 # Inherit common proprietary files
 $(call inherit-product-if-exists, vendor/asus/X00P/X00P-vendor.mk)
