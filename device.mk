@@ -432,5 +432,9 @@ PRODUCT_PACKAGES += \
 # Reduce system image size by limiting java debug info.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
+# Always preopt extracted APKs to prevent extracting out of the APK
+# for gms modules.
+PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
+
 # Inherit common proprietary files
 $(call inherit-product-if-exists, vendor/asus/X00P/X00P-vendor.mk)
