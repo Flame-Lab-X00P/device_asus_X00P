@@ -127,6 +127,16 @@ PRODUCT_PACKAGES += \
     libmm-qcamera \
     android.frameworks.displayservice@1.0
 
+# Charging
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
+# Codec2 modules
+PRODUCT_PACKAGES += \
+    com.android.media.swcodec \
+    libsfplugin_ccodec
+
 # CNE
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
