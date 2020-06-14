@@ -52,14 +52,8 @@
          provisioning, availability etc -->
      <bool name="config_carrier_wfc_ims_available">false</bool>
 
-    <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
-     <bool name="config_cellBroadcastAppLinks">true</bool>
-
     <!-- Flag specifying whether VoLTE is available on device -->
      <bool name="config_device_volte_available">true</bool>
-    <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
-         on the headphone/microphone jack. When false use the older uevent framework. -->
-    <bool name="config_useDevInputEventForAudioJack">true</bool>
 
     <!-- Flag specifying whether VT is available on device -->
      <bool name="config_device_vt_available">true</bool>
@@ -120,9 +114,6 @@
          policy/src/com/android/internal/policy/impl/PhoneWindowManager.java
     -->
     <integer name="config_longPressOnHomeBehavior">3</integer>
-
-    <!-- Wifi driver supports batched scan -->
-    <bool translatable="false" name="config_wifi_batched_scan_supported">true</bool>
 
     <!-- Is the device capable of hot swapping an ICC Card -->
      <bool name="config_hotswapCapable">true</bool>
