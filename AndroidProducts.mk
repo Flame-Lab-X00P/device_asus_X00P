@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cesium_X00P.mk
+    $(LOCAL_DIR)/du_X00P.mk
 
 COMMON_LUNCH_CHOICES := \
-    cesium_X00P-user \
-    cesium_X00P-userdebug \
-    cesium_X00P-eng
+    du_X00P-user \
+    du_X00P-userdebug \
+    du_X00P-eng
