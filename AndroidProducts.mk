@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cesium_X00P.mk
+    $(LOCAL_DIR)/potato_X00P.mk
 
 COMMON_LUNCH_CHOICES := \
-    cesium_X00P-user \
-    cesium_X00P-userdebug \
-    cesium_X00P-eng
+    potato_X00P-user \
+    potato_X00P-userdebug \
+    potato_X00P-eng
