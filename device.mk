@@ -117,7 +117,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    Gcam
 
 PRODUCT_PACKAGES += \
     camera.device@1.0-impl \
