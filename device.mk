@@ -365,6 +365,10 @@ PRODUCT_PACKAGES += \
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
+    
+# Screen Recorder
+PRODUCT_PACKAGES += \
+    ScreenRecorder
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
