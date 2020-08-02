@@ -271,6 +271,10 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
+    
+# OPLauncher
+PRODUCT_PACKAGES += \
+    OPLauncher2    
 
 # Permissions
 PRODUCT_COPY_FILES += \
