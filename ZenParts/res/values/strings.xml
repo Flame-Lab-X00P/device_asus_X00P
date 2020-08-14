@@ -36,6 +36,9 @@
     <string name="headphone_gain">Headphone gain</string>
     <string name="microphone_gain">Microphone gain</string>
     
+    <string name="gaming_title">Game Genie</string>
+    <string name="gaming_browse_summary">Lunch game genie settings</string>
+    
     <!-- Spectrum Profiles -->
     <string name="spectrum_profile_title">Spectrum</string>
     <string name="spectrum_title">Spectrum Profiles</string>
