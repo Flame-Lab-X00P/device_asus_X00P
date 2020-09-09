@@ -34,7 +34,7 @@ import com.asus.zenparts.KernelControl;
 import com.asus.zenparts.settings.ScreenOffGesture;
 import com.asus.zenparts.utils.FileUtils;
 import com.asus.zenparts.Utils;
-import android.os.SystemProperties;
+
 import java.io.File;
 
 public class Startup extends BroadcastReceiver {
@@ -86,16 +86,6 @@ public class Startup extends BroadcastReceiver {
                 PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
                 PackageManager.DONT_KILL_APP);
     }
-    
-    value = Settings.System.getString(context.getContentResolver(), DeviceSettings.TEMP_FPS);
-        if (TextUtils.isEmpty(value)) {
-            value = DeviceSettings.DEFAULT_FPS_VALUE;
-            Settings.System.putString(context.getContentResolver(), DeviceSettings.TEMP_FPS, value);
-            SystemProperties.set(DeviceSettings.VENDOR_FPS, value);
-        } else {
-	    Settings.System.putString(context.getContentResolver(), DeviceSettings.TEMP_FPS, value);
-        SystemProperties.set(DeviceSettings.VENDOR_FPS, value);
-        }
 
     private void enableComponent(Context context, String component) {
         ComponentName name = new ComponentName(context, component);

@@ -27,7 +27,6 @@ import androidx.preference.PreferenceManager;
 import androidx.preference.SwitchPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
-import android.content.pm.ApplicationInfo;
 
 import com.asus.zenparts.kcal.KCalSettingsActivity;
 import com.asus.zenparts.ambient.AmbientGesturePreferenceActivity;
@@ -55,8 +54,6 @@ public class DeviceSettings extends PreferenceFragment implements
     private static final String PREF_SPECTRUM = "spectrum";
     private static final String SPECTRUM_SYSTEM_PROPERTY = "persist.spectrum.profile";
 
-    public static final String KEY_GAME_GENIE = "game_toolbar_app";
-    
     final static String PREF_HEADPHONE_GAIN = "headphone_gain";
     private static final String HEADPHONE_GAIN_PATH = "/sys/kernel/sound_control/headphone_gain";
     final static String PREF_MICROPHONE_GAIN = "microphone_gain";
@@ -71,8 +68,6 @@ public class DeviceSettings extends PreferenceFragment implements
     private CustomSeekBarPreference mMicrophoneGain;
     private Preference mKcal;
     private Preference mAmbientPref;
-    
-    private static Preference mGameGenie;
     
     private SecureSettingListPreference mSPECTRUM;
 
@@ -97,9 +92,6 @@ public class DeviceSettings extends PreferenceFragment implements
         mHeadphoneGain = (CustomSeekBarPreference) findPreference(PREF_HEADPHONE_GAIN);
         mHeadphoneGain.setOnPreferenceChangeListener(this);
 
-        mGameGenie = findPreference(KEY_GAME_GENIE);
-        mGameGenie.setEnabled(GameGenie.isGameGenieExist(this.getContext()));
-        
         mMicrophoneGain = (CustomSeekBarPreference) findPreference(PREF_MICROPHONE_GAIN);
         mMicrophoneGain.setOnPreferenceChangeListener(this);
 

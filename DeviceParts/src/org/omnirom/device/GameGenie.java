@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.asus.zenparts;
+package org.omnirom.device;
 
 import android.content.ActivityNotFoundException;
 import android.content.Context;
